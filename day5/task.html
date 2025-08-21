@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            top:0;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .parent{
+            background-color: white;
+            font-size:larger;
+            position:fixed;
+            margin-top:0%;
+            top:0;
+            width:100%;
+            z-index: 1000;
+        }
+        .parent p{
+            display: inline-block;
+
+        }
+        .child{
+            display: inline;
+            padding-left: 70%;
+        }
+        
+        
+       
+        .parent1>p{
+            position: absolute;
+            top: 40%;
+            left: 35%;
+            color: white;
+            font-size: 56px;
+            padding: 10px 20px;
+
+            
+        }
+        .parent1 b{
+            background-color: black;
+            border-radius: 5px;
+
+        }
+        .parent2{
+            width: 100%;
+            position: relative;
+        }
+        .parent2>.child1{
+            display:inline-block;
+            margin-left:2%;
+            width: 20%;
+            height: 30%;
+        }
+        .parent2>.child1 img{
+            width:100%;
+            margin-left:3%;
+        }
+        .child1 p{
+            position: absolute;
+            top: 0;
+            margin-top: 0;
+            margin-left:10px;
+        }
+        .parent3{
+            width: 100%;
+            position: relative;
+        }
+        .parent3>.child2{
+            display:inline-block;
+            margin-left:2%;
+            width: 20%;
+            height: 30%;
+        }
+        .parent3>.child2 img{
+            width:100%;
+            margin-left:3%;
+        }
+        .child2 p{
+            position: absolute;
+            margin-top: 0;
+            top: 0;
+            margin-left:10px;
+        }
+        .about{
+            margin: 5%;
+        }
+        .about h2,p{
+            margin:1%;
+        }
+        .parent4{
+            width:100%;
+            position:relative;
+        }
+        .parent4>.child3{
+            display: inline-block;
+            margin-left:2%;
+            width:20%;
+            height:30%
+            
+        }
+        .parent4>.child3 img{
+            width:100%;
+            margin-left:3%;
+        }
+        .parent4>.child3>p,button{
+            margin:10px;
+            
+        }
+        .parent5 >label>input{
+            width: 90%;
+            margin:5px;
+            font-size: x-large;
+        }
+        .parent6 img{
+            margin: 60px 15px;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p><b>BR</b> Architects</p>
+        <div class="child">
+            <p>Projects</p>
+            <p>About</p>
+            <p>Contacts</p>
+        </div>
+
+    </div>
+
+    <div class="parent1">
+        <img src="https://www.w3schools.com/w3images/architect.jpg" alt="">
+        <p><b>BR</b>&nbsp;Architects</p>
+    </div>
+    <p style="font-size: xx-large;">Projects</p> <hr><br>
+    <div class="parent2">
+        <div class="child1">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <p style="background-color: black; color: white;">Summer House</p>
+        </div>
+        <div class="child1">
+            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+            <p style="background-color: black; color: white;">Brick House</p>
+
+        </div>
+        <div class="child1">
+          <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">  
+            <p style="background-color: black; color: white;">Renovated</p>
+
+        </div>
+        <div class="child1">
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+            <p style="background-color: black; color: white;">Barn House</p>
+
+        </div>
+    </div>
+
+    <div class="parent3">
+<div class="child2">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <p style="background-color: black; color: white;">Summer House</p>
+        </div>
+        <div class="child2">
+            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+            <p style="background-color: black; color: white;">Brick House</p>
+
+        </div>
+        <div class="child2">
+          <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">  
+            <p style="background-color: black; color: white;">Renovated</p>
+
+        </div>
+        <div class="child2">
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+            <p style="background-color: black; color: white;">Barn House</p>
+
+        </div>
+    </div>
+    <div class="about">
+    <h1>About</h1>
+    <p style="font-size:larger;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+</p>
+</div>
+<div class="parent4">
+    <div class="child3">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+        <p style="font-size:xx-large;">John Doe</p>
+        <p style="font-size: 20px; color: rgb(67, 58, 58);">CEO & Founder</p>
+        <p style="font-size: large;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button style="width: 100%; font-size: x-large;">contact</button>
+
+    </div>
+    <div class="child3">
+        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
+        <p style="font-size:xx-large;">Jane Doe</p>
+        <p style="font-size: 20px; color: rgb(67, 58, 58);">Architect</p>
+        <p style="font-size: large;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button style="width: 100%; font-size: x-large;">contact</button>
+    
+
+    </div>
+    <div class="child3">
+       <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
+       <p style="font-size: xx-large;">Mike Ross</p>
+       <p style="font-size: 20px; color: rgb(67, 58, 58);">Architect</p>
+       <p style="font-size: large;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+       <button style="width: 100%; font-size: x-large;">contact</button>
+
+
+    </div>
+    <div class="child3">
+        <img src="https://www.w3schools.com/w3images/team4.jpg" alt="">
+        <p style="font-size:xx-large;">Dan Star</p>
+        <p style="font-size: 20px; color: rgb(67, 58, 58); ">Architect</p>
+        <p style="font-size: large;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <button style="width: 100%; font-size: x-large;">contact</button>
+
+    
+    </div>
+</div>
+<div class="parent5">
+     <p style="font-size:xx-large; margin-top: 60px;">Contact</p>
+     <p style="font-size: larger;">Lets get in touch and talk about your next project.</p>
+     <label for="">
+     <input type="text" placeholder="Name"><br>
+     <input type="text" placeholder="Email"><br>
+     <input type="text" placeholder="Subject"><br>
+     <input type="text" placeholder="Comment">  <br>
+     </label>
+     
+     <button style="background-color: black;color: white;font-size:large ; padding: 10px;">SEND MESSAGE</button>
+</div>
+<div class="parent6">
+    <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+</div>
+<p style="background-color: black;padding:2% 40% ; color: white; margin:0%;">Powered by <a href="" style="color: white;">sharanya</a></p>
+
+</body>
+</html>
