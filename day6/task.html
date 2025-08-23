@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        background-color:orangered;
+    
+        }
+        div{
+            margin:0px ;
+        }
+        
+        
+        .parent1{
+            width:180px;
+            height:180px;
+            margin-top:-14px;
+            margin-left: 125px;
+            background-color:orangered;
+            position:absolute;
+            border-radius: 1000px;
+            animation-name: sun;
+            animation-delay: 3s;
+            animation-duration: 5s;
+            animation-iteration-count: 5;
+            animation-direction:alternate;
+            animation-timing-function:linear;
+            z-index: 900;
+            
+        }
+
+        .parent2{
+            width: 150px;
+            height: 150px;
+            margin-left:140px;
+            margin-top:200px;
+            background-color:orangered;
+            border-radius: 1000px;
+            position: relative;
+            z-index: 1000;
+            
+            
+        }
+          @keyframes sun{
+            from{
+               background-color:rgb(205, 176, 14);
+               margin-left:170px;
+               
+                
+            }
+            50%{
+                background-color: rgb(205, 176, 14);
+               margin-left:100px;
+            } 
+            to{
+                background-color:rgb(205, 176, 14);
+                margin-left:90px;
+
+            } 
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="anim">
+    <div class="parent1"></div>
+    <div class="parent2"></div>
+</div>
+</body>
+</html>
