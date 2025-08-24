@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selector</title>
+    <style>
+        /* descendant selector */
+        div p{
+            color: green;
+        }
+        /* child selector */
+        div>p{
+            font-weight: bold;
+        }
+        /* adjacent sibling selector */
+        h2+p{
+            color: red;
+        }
+        /* general sibling selector */
+        h2~p{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>paragraph inside div (descendant & child)</p>
+        <section>
+            <p>paragraph inside section inside div(descendant only)</p>
+        </section>
+    </div>
+    <h2>Heading</h2>
+    <p>first paragraph after h2 (adjacent sibling)</p>
+    <p>second paragraph after h2 (general sibiling)</p>
+</body>
+</html>
