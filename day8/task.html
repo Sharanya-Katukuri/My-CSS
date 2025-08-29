@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeeksForGeeks</title>
+    <link rel="icon" href="greeks.jpeg">
+    <style>
+       .dropdown{
+        display: none;
+        position: absolute;
+        margin-top: 5px;
+        padding: 10px;
+       }
+       
+
+       .child:hover .dropdown{
+        display: block;
+        border-top: 5px solid green;
+        margin-top: 5px;
+       }
+       
+       
+       .child{
+        display:inline-block;
+        margin-left: 30px;
+        position: relative;
+        padding: 8px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+       }
+       .nav{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgb(245, 244, 242);
+       }
+       .dropdown{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+       }
+    
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="child">Courses
+            <div class="dropdown">
+                <p>DSA to Development</p>
+                <p>For Working <br>Professionals</p>
+                <p>For Student</p>
+                <p>Full Stack Development</p>
+                <p></p>
+            </div>
+            </div>
+        <div class="child">Tutorials
+            <div class="dropdown">
+                <p>Python</p>
+                <p>Java</p>
+                <p>DSA</p>
+                <p>ML & Data Science</p>
+                <p>Interview Corner</p>
+                <p>Programming Languages</p>
+                <p>Web Development</p>
+                <p>GATE</p>
+                <p>CS Subjects</p>
+                <p>DevOps</p>
+                <p>School Learning</p>
+                <p>Software and Tools</p>
+            </div>
+            </div>
+        <div class="child">Practice
+            <div class="dropdown">
+                <p>Practice Coding Problems</p>
+                <p>Nation Skillup-Free Courses</p>
+                <p>Problem of the Day </p>
+            </div>
+            </div>
+        <div class="child">Jobs
+            <div class="dropdown">
+                <p>Become a Mentor</p>
+                <p>Apply Now!</p>
+                <p>Post Jobs</p>
+                <p>Job-A-Thon:Hiring <br>Challenge</p>
+                <p>Jobs Updates</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
