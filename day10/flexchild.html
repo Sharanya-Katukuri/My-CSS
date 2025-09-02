@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-items</title>
+    <style>
+        .parent{
+            display:flex;
+            font-size: 2em;
+            height: 100vh;
+        }
+        .class1{
+            background-color: lightgreen;
+            order: 4;
+            flex-grow: 1;
+
+        }
+        .class2{
+            background-color: pink;
+            order: 1;
+            flex-grow: 1;
+            
+        }
+        .class3{
+            background-color: lightblue;
+            order: 2;
+            flex-basis: 300px;
+            align-self: center;
+            
+        }
+        .class4{
+            background-color: aqua;
+            flex-grow: 1;
+            flex-shrink: 0;
+        
+        }
+        .class5{
+            background-color: rgb(152, 111, 190);
+            order: -4;
+            flex-grow: 1;
+        }
+        .class6{
+            background-color:rgb(250, 250, 120);
+            order: -3;
+            flex-basis: 300px;
+            align-self: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="class1">Item-6</div>
+        <div class="class2">Item-4</div>
+        <div class="class3">Item-5</div>
+        <div class="class4">Item-3</div>
+        <div class="class5">Item-1</div>
+        <div class="class6">Item-2</div>
+    </div>
+</body>
+</html>
