@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            height:100vh;
+            gap:10px;
+        }
+        .child1{
+            background-color: lightseagreen;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .child2{
+            background-color: lightgreen;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .child3{
+            background-color: palevioletred;
+        }
+        .child4{
+            background-color: rgb(188, 129, 243);
+            grid-row: 2/4;
+            grid-column: 3/4;
+        }
+        .child5{
+            background-color: rgb(240, 188, 58);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">oppo</div>
+        <div class="child2">vivo</div>
+        <div class="child3">iphone</div>
+        <div class="child4">realme</div>
+        <div class="child5">samsung</div>
+    </div>
+</body>
+</html>
