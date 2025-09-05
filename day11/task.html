@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>grid</title>
     <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
         .container{
             display: grid;
             grid-template-columns: repeat(3,1fr);
             gap:20px;
             width: 500px;
             height: 500px;
-            margin-top: 200px;
-            margin-left: 350px;
+            /* margin-top: 200px;
+            margin-left: 350px; */
+            place-content: center;
         }
         .parent1{
             display: grid;
