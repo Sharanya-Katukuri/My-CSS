@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridarea</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-areas: 
+            'header header header header header'
+            'nav   article  article article ads'
+            'nav   article  article article ads'
+            'nav   article  article article ads'
+            'nav   footer  footer footer footer';
+            height: 100vh;
+            gap:20px
+        }
+        .child1{
+            grid-area: header;
+            background-color: rgb(155, 247, 116);
+        }
+        .child2{
+            grid-area: footer;
+            background-color: rgb(155, 247, 116);
+        }
+        .child3{
+            grid-area: ads;
+            background-color: rgb(155, 247, 116);
+        }
+        .child4{
+            grid-area: nav;
+            background-color: rgb(155, 247, 116);
+        }
+        .child5{
+            grid-area: article;
+            background-color: rgb(155, 247, 116);
+        }
+
+        @media screen and (min-width:320px) and (max-width:426px){
+            .parent{
+            display: grid;
+            grid-template-areas: 
+            'header header header header header'
+            'nav   article  article article ads'
+            'nav   article  article article ads'
+            'nav   article  article article ads'
+            'nav   footer  footer footer footer';
+            height: 100vh;
+            gap:5px
+        }
+        .child1{
+            grid-area: header;
+            background-color: rgb(14, 185, 247);
+        }
+        .child2{
+            grid-area: footer;
+            background-color: rgb(14, 185, 247);
+        }
+        .child3{
+            grid-area: ads;
+           background-color: rgb(14, 185, 247);
+        }
+        .child4{
+            grid-area: nav;
+            background-color: rgb(14, 185, 247);
+        }
+        .child5{
+            grid-area: article;
+            background-color: rgb(14, 185, 247);
+
+        }
+        }
+        @media screen and (min-width:426px) and (max-width:769px){
+            .parent{
+            display: grid;
+            grid-template-areas: 
+            'header header header header header'
+            'nav   article  article article ads'
+            'nav   article  article article ads'
+            'nav   article  article article ads'
+            'nav   footer  footer footer footer';
+            height: 100vh;
+            gap:10px
+        }
+        .child1{
+            grid-area: header;
+            background-color: yellow;
+        }
+        .child2{
+            grid-area: footer;
+            background-color: yellow;
+        }
+        .child3{
+            grid-area: ads;
+           background-color: yellow;
+        }
+        .child4{
+            grid-area: nav;
+            background-color: yellow;
+        }
+        .child5{
+            grid-area: article;
+            background-color: yellow;
+
+        } 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">header</div>
+        <div class="child2">footer</div>
+        <div class="child3">ads</div>
+        <div class="child4">nav</div>
+        <div class="child5">article</div>
+    </div>
+    
+</body>
+</html>
