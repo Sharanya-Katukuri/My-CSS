@@ -76,181 +76,90 @@
         width:20%;
         margin-left:3%;   
      }
-     
+    
     .child4>p{
         display: inline-block;
         margin-left:2%;
     }
-    @media screen and (min-width:320px) and (max-width:426px){
-        .parent1{
-        width:100vw;
-        /* margin:3%; */
+    /* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    .child,
+    .child1 {
+        width: 45%;
+        margin-left: 4%;
+        margin-bottom: 20px;
+    }
 
+    .parent3 {
+        margin-left: 25%;
     }
-    .child{
-        display:block;
-        width:100%;
-        
-    }
-    
-    .child img{
-        width:300%;
-    }
-     
-    .parent2{
-        width:100%;
-        margin:5%;
 
+    .parent4 {
+        margin-left: 10%;
     }
-    .child1{
-        display:block;
-        width:100%;
-        margin-left:3%;
+    .parent4 img {
+        width: 80%;
     }
-    .child1 img{
-        width:300%;
-    }
-    .parent3{
-        margin-left: 120%;
-        width: 100%;
-    }
-    .parent3>p{
-        padding:2%;
+
+    .parent5>.child2,
+    .parent5>.child3,
+    .parent5>.child4 {
+        width: 40%;
         margin-left: 5%;
-        display: inline-block;
-        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
 
-    
-    }
-    .parent4{
-        width: 100vw;
-        margin-left:25% ;
-    }
-    .parent4>h1{
-        margin-left:5px;
-        font-size: 26px;
-        display: inline;
-        width: 100%;
-    }
-    .parent4>h2{
-        margin-left:2px;
-        display: inline;
-        font-size: 25px;
-        width: 100%;
-    } 
-    .parent4>h4{
-        margin-left:18%;
-        font-size:15px;
-        width: 100%;
-    }  
-    .parent4>p{
-        /* margin-left:5%; */
-        display: inline;
-        font-size:35px;
-        width: 100%;
-    }
-    .parent5{
-        width:100%;
-        margin-left:2%;
-
-    }
-    .subchild img{
-        width:18%;
-    }
-    .subchild>p{
-        display:block;
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .child,
+    .child1 {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 20px;
     }
 
-    .parent5>.child2,.child3,.child4{
-        display:block;
-        width:100%;
-        margin-left:50%;   
-     }
-    
-    .child4>p{
-        display:block;
-        margin-left:2%;
-    }
-    }
-    @media screen and (min-width:426px) and (max-width:769px){
-        .parent1{
-        width:100%;
-        margin:5%;
-
-    }
-   
-    .child{
-        display: inline-block;
-        width:20%;
-        margin-left:3%;
-    }
-    .child img{
-        width:100%;
+    .parent3 {
+        margin-left: 15%;
     }
 
-    .parent2{
-        width:100%;
-        margin:5%;
+    .parent4 {
+        margin-left: 0;
+        text-align: center;
+    }
+    .parent4 img {
+        width: 90%;
+    }
+    .parent4>h1,
+    .parent4>h2,
+    .parent4>h4,
+    .parent4>p {
+        margin-left: 0;
+    }
 
+    .parent5>.child2,
+    .parent5>.child3,
+    .parent5>.child4 {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+        text-align: center;
     }
-    .child1{
-        display: inline-block;
-        width:20%;
-        margin-left:3%;
+    .subchild img {
+        width: 40%;
+        display: block;
+        margin: 0 auto;
     }
-    .child1 img{
-        width:100%;
+    .subchild>p {
+        display: block;
+        margin-top: 10px;
     }
-    .parent3{
-        margin-left: 40%;
-    }
-    .parent3>p{
-        padding:2%;
-        margin-left: 2%;
-        display: inline-block;
-
-    
-    }
-    .parent4{
-        width: 100%;
-        margin-left:25% ;
-    }
-    .parent4>h1{
-        margin-left:15%;
-    }
-    .parent4>h2{
-        margin-left:20%;
-    } 
-    .parent4>h4{
-        margin-left:18%;
-    }  
-    .parent4>p{
-        margin-left:5%;
-    }
-    .parent5{
-        width:100%;
-        margin-left:2%;
-
-    }
-    .subchild img{
-        width:18%;
-    }
-    .subchild>p{
+    .child4>p {
+        margin: 5px;
         display: inline-block;
     }
+}
 
-    .parent5>.child2,.child3,.child4{
-        display: inline-block;
-        width:20%;
-        margin-left:3%;   
-     }
-    
-    .child4>p{
-        display: inline-block;
-        margin-left:2%;
-    }
-    }
-    
 
 </style>
 <body>
@@ -370,3 +279,5 @@ Praes tinci sed
 
 </body>
 </html>
+
+
